@@ -1,0 +1,43 @@
+.list-item {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+
+  &__rating {
+    position: absolute;
+    left: -24px;
+    top: 0px;
+    height: 40px;
+    width: 40px;
+    background: rgb(194, 84, 189);
+    @include flex-c-c;
+    border-radius: 50px;
+    color: #fff;
+  }
+
+  &__text {
+    line-height: 30px;
+    color: #444;
+  }
+
+  &__remove {
+    font-size: 26px;
+    color: #444;
+    @include hover;
+    margin-left: 20px;
+  }
+}
+
+.details {
+  @include flex-sb-c;
+  padding: 20px 0;
+
+  &__count {
+    color: #fff;
+  }
+
+  &__average {
+    color: #fff;
+  }
+}
