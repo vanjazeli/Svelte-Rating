@@ -1,6 +1,6 @@
 import { writable } from "svelte/store";
 
-export const items = writable([
+let defaultItems = [
   {
     id: 1,
     rating: 9,
@@ -21,4 +21,12 @@ export const items = writable([
     rating: 10,
     text: "Text 4",
   },
-]);
+];
+
+let defaultId = defaultItems.length + 1;
+
+export const items = writable(defaultItems);
+
+export const id = writable(defaultId);
+
+export const tempRating = writable(10);
