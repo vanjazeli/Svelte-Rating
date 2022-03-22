@@ -42,8 +42,76 @@
   }
 }
 
-// .header {
-//   &__form {
-//     @include flex-sb-c;
-//   }
-// }
+.header {
+  margin-top: 50px;
+
+  &__message {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  &__form {
+    @include flex-sb-c;
+  }
+}
+
+.custom-input {
+  margin-left: 10px;
+  @include flex-c-c;
+  width: 100%;
+
+  &__input {
+    width: 100%;
+    padding: 10px 16px;
+    border: none;
+  }
+
+  &__button {
+    background: #c254bd;
+    font-weight: bold;
+    padding: 10px 16px;
+    color: #fff;
+    border-radius: 15px;
+    @include hover;
+  }
+}
+
+.custom-select {
+  position: relative;
+  cursor: pointer;
+  @include hover;
+
+  &__select {
+    background: #c254bd;
+    font-weight: bold;
+    padding: 10px 16px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 15px;
+  }
+
+  &__cover {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 36px;
+    width: 20px;
+    background: #c254bd;
+    border-radius: 0 15px 15px 0;
+    pointer-events: none;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 16px;
+      transform: translateY(-50%);
+      width: 0;
+      height: 0;
+      border-left: 6px solid transparent;
+      border-right: 6px solid transparent;
+      border-top: 6px solid white;
+    }
+  }
+}

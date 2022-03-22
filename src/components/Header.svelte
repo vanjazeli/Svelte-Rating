@@ -7,6 +7,7 @@
   const handleSubmit = () => {
     $items = [{ id: $id, rating: $tempRating, text: comment }, ...$items];
     $id++;
+    comment = "";
   };
 </script>
 
@@ -18,7 +19,7 @@
     on:submit|preventDefault={handleSubmit}
   >
     <Select className="header__select" />
-    <div class="custom-itput">
+    <div class="custom-input">
       <input
         class="custom-input__input"
         type="text"

@@ -9,11 +9,10 @@
 
 <div class="{className} custom-select">
   <select
-    class="{className} custom-select__select"
+    class="custom-select__select"
     name="rating"
     id="rating"
     on:input={handleInput}
-    on:loadstart={handleInput}
   >
     <option class="custom-select__option" value="10">10</option>
     <option class="custom-select__option" value="9">9</option>
@@ -26,5 +25,5 @@
     <option class="custom-select__option" value="2">2</option>
     <option class="custom-select__option" value="1">1</option>
   </select>
-  <span class="custom-select__arrow" />
+  <span class="custom-select__cover" />
 </div>
