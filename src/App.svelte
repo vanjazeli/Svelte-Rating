@@ -3,7 +3,7 @@
   import List from "./components/List.svelte";
 </script>
 
-<Header />
 <div class="container-main">
+  <Header />
   <List />
 </div>
