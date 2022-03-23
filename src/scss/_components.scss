@@ -45,13 +45,22 @@
 .header {
   margin-top: 50px;
 
-  &__message {
+  &__heading {
     text-align: center;
-    margin-bottom: 20px;
+    font-size: 26px;
+    margin: 40px 0;
   }
 
   &__form {
     @include flex-sb-c;
+  }
+
+  &__message {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: #ccc;
+    text-align: center;
+    font-size: 14px;
   }
 }
 
@@ -73,6 +82,11 @@
     color: #fff;
     border-radius: 15px;
     @include hover;
+  }
+
+  &__button:disabled {
+    background: #ccc;
+    cursor: default;
   }
 }
 
