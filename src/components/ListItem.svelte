@@ -4,6 +4,7 @@
   export let text;
 
   import { items } from "../stores";
+  import { fade } from "svelte/transition";
 
   const handleClick = (index) => {
     $items.splice(index, 1);
@@ -11,7 +12,7 @@
   };
 </script>
 
-<div class="list-item card">
+<div class="list-item card" transition:fade>
   <div class="list-item__rating">{rating}</div>
   <p class="list-item__text">
     {text}
