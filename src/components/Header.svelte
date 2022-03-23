@@ -12,17 +12,12 @@
   };
 
   const handleInput = () => {
-    console.log(comment.length);
     if (comment.length >= 10) {
       countChecker = false;
-      console.log(countChecker);
     } else {
       countChecker = true;
-      console.log(countChecker);
     }
   };
-
-  console.log(countChecker);
 </script>
 
 <div class="header card">
